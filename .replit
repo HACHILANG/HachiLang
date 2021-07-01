@@ -1,4 +1,0 @@
-run="node HachiLang/index.js uninstall"
-#run="npm install readline-sync"
-#run="node test.js hi"
-#run = "node HachiLang/src/lib/requests.js"

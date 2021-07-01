@@ -9,8 +9,8 @@ const fs = require('fs');
 
 async function Import(file, name){
 
-  if(fs.existsSync("HachiLang/src/lib/site-packages/"+file)){
-    await RequireModule("HachiLang/src/lib/site-packages/"+file, name);
+  if(fs.existsSync("/HachiLang/src/lib/site-packages/"+file)){
+    await RequireModule("/HachiLang/src/lib/site-packages/"+file, name);
   } else {
     await RequireModule(file, name);
   }

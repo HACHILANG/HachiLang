@@ -1,0 +1,17 @@
+#!/bin/bash
+#Detriot
+echo `which node` > tt
+value=`ls -lrt tt | awk '{print $5}'`
+if [ $value == 1 ]
+then
+  rm tt
+  echo "NODEJS not installed, installing"
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+  nvm ls
+  nvm install 14.17.0
+  nvm use 14.17.0
+  echo "Process Ended"
+else
+  rm tt
+  echo "installed"
+fi

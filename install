@@ -1,7 +1,12 @@
 echo "Hello!, welcome to HACHI Installer"
+
 echo "I'll be helping you install HACHI, so just relax, and we will tell you if we need you password."
-echo("------------------------------------------")
-./lazydev.sh
-./a.out
-./run.sh
-echo "Process Done!, to uninstall
+
+
+echo "------------------------------------------"
+
+su
+./installation/lazydev.sh
+./installation/nodechecker
+./installation/run.sh
+echo "Process Ended, say ./uninstall to uninstall if correctly installed"
